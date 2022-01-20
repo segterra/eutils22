@@ -6,7 +6,7 @@
 
     <groupId>gov.nih.nlm.ncbi</groupId>
     <artifactId>eutils</artifactId>
-    <version>2.2.5</version>
+    <version>2.2.6</version>
 
     <build>
         <finalName>${project.artifactId}</finalName>
@@ -24,6 +24,17 @@
     </build>
     <dependencies>
         <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>3.0.0</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.7</version>
@@ -36,6 +47,24 @@
         </dependency>
     </dependencies>
     <properties>
-        <java.source.version>1.7</java.source.version>
+        <java.source.version>17</java.source.version>
     </properties>
+    <repositories>
+        <repository>
+            <id>eutils.feed</id>
+            <url>https://pkgs.dev.azure.com/Segterra/Eutils/_packaging/eutils.feed/maven/v1</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>eutils.feed</id>
+            <url>https://pkgs.dev.azure.com/Segterra/Eutils/_packaging/eutils.feed/maven/v1</url>
+        </repository>
+    </distributionManagement>
 </project>
