@@ -6,7 +6,7 @@
 
     <groupId>gov.nih.nlm.ncbi</groupId>
     <artifactId>eutils</artifactId>
-    <version>2.2.6.1</version>
+    <version>2.2.5</version>
 
     <build>
         <finalName>${project.artifactId}</finalName>
@@ -47,7 +47,7 @@
         </dependency>
     </dependencies>
     <properties>
-        <java.source.version>11</java.source.version>
+        <java.source.version>8</java.source.version>
     </properties>
     <repositories>
         <repository>
