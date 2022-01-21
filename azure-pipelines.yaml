@@ -5,6 +5,9 @@ pool:
   vmImage: "ubuntu-latest"
 
 steps:
+  - task: MavenAuthenticate@0
+    inputs:
+      artifactsFeeds: 'eutils.feed'
   - task: Maven@3
     inputs:
       mavenPomFile: 'pom.xml'
