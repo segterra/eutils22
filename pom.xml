@@ -6,7 +6,7 @@
 
     <groupId>gov.nih.nlm.ncbi</groupId>
     <artifactId>eutils</artifactId>
-    <version>2.2.8-SNAPSHOT</version>
+    <version>2.2.5-SNAPSHOT</version>
 
     <build>
         <finalName>${project.artifactId}</finalName>
@@ -40,8 +40,8 @@
     </properties>
     <repositories>
         <repository>
-            <id>eutils.feed</id>
-            <url>https://pkgs.dev.azure.com/Segterra/Eutils/_packaging/eutils.feed/maven/v1</url>
+            <id>Segterra</id>
+            <url>https://pkgs.dev.azure.com/Segterra/_packaging/Segterra/maven/v1</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -52,8 +52,8 @@
     </repositories>
     <distributionManagement>
         <repository>
-            <id>eutils.feed</id>
-            <url>https://pkgs.dev.azure.com/Segterra/Eutils/_packaging/eutils.feed/maven/v1</url>
+            <id>Segterra</id>
+            <url>https://pkgs.dev.azure.com/Segterra/_packaging/Segterra/maven/v1</url>
         </repository>
     </distributionManagement>
 </project>
